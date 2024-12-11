@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="202.99899"
+   height="2.0634899"
+   viewBox="0 0 202.99899 2.0634899"
+   fill="none"
+   version="1.1"
+   id="svg15"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <path
+     d="m 153,1 h 32"
+     stroke="#ffa548"
+     stroke-width="2"
+     stroke-linecap="round"
+     id="path2" />
+  <path
+     d="m 1,1 144,1e-5"
+     stroke="url(#paint0_linear_1_1455)"
+     stroke-width="2"
+     stroke-linecap="round"
+     id="path4"
+     style="stroke:url(#paint0_linear_1_1455)" />
+  <path
+     d="m 189.932,1 12.067,0.06349"
+     stroke="#ffa548"
+     stroke-width="2"
+     stroke-linecap="round"
+     id="path6" />
+  <defs
+     id="defs13">
+    <linearGradient
+       id="paint0_linear_1_1455"
+       x1="1"
+       y1="2.5"
+       x2="145"
+       y2="2.50001"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,-1)">
+      <stop
+         id="stop8" />
+      <stop
+         offset="1"
+         stop-color="#FFA548"
+         id="stop10" />
+    </linearGradient>
+  </defs>
+</svg>
