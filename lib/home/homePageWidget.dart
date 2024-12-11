@@ -7,6 +7,7 @@ import 'package:miles_education/home/model/dataList.dart';
 import 'package:miles_education/home/statusListWidget.dart';
 
 import '../theme/appColor.dart';
+import '../theme/string.dart';
 import '../uiwidget/SFTextWidget.dart';
 import 'ItemListWidget.dart';
 
@@ -35,8 +36,6 @@ class _MyHomePageState extends State<MyHomePage> {
       jsonData = data;
 
       dataList = DataList.fromJson(jsonData);
-
-      print('arrtrip====>${dataList!.data.length}');
     });
     //print(jsonData);
   }
@@ -83,16 +82,16 @@ class _MyHomePageState extends State<MyHomePage> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Column(
+                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Sftextwidget(
-                              textval: "Good Morning!",
+                              textval: goodMorning,
                               colorval: Colors.white,
                               sizeval: 18,
                               fontWeight: FontWeight.w200),
                           Sftextwidget(
-                              textval: "Shivam",
+                              textval: shivam,
                               colorval: Colors.white,
                               sizeval: 16,
                               fontWeight: FontWeight.w600)

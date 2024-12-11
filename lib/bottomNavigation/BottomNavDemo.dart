@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:miles_education/home/homePageWidget.dart';
 import 'package:miles_education/uiwidget/SFTextWidget.dart';
 
+import '../theme/string.dart';
+
 class BottomNavDemo extends StatefulWidget {
   @override
   _BottomNavDemoState createState() => _BottomNavDemoState();
@@ -12,10 +14,10 @@ class _BottomNavDemoState extends State<BottomNavDemo> {
 
   final List<Widget> _pages = [
     MyHomePage(),
-    const Center(child: Sftextwidget(textval: "Movie Page", colorval: Colors.white, sizeval: 24, fontWeight: FontWeight.bold)),
-    const Center(child: Sftextwidget(textval: "Activity Page", colorval: Colors.white, sizeval: 24, fontWeight: FontWeight.bold)),
-    const Center(child: Sftextwidget(textval: "Calendar Page", colorval: Colors.white, sizeval: 24, fontWeight: FontWeight.bold)),
-    const Center(child: Sftextwidget(textval: "Profile Page", colorval: Colors.white, sizeval: 24, fontWeight: FontWeight.bold)),
+     Center(child: Sftextwidget(textval: moviePage, colorval: Colors.white, sizeval: 24, fontWeight: FontWeight.bold)),
+     Center(child: Sftextwidget(textval: activityPage, colorval: Colors.white, sizeval: 24, fontWeight: FontWeight.bold)),
+     Center(child: Sftextwidget(textval: calendarPage, colorval: Colors.white, sizeval: 24, fontWeight: FontWeight.bold)),
+     Center(child: Sftextwidget(textval:profilePage, colorval: Colors.white, sizeval: 24, fontWeight: FontWeight.bold)),
   ];
 
   @override
@@ -54,26 +56,26 @@ class _BottomNavDemoState extends State<BottomNavDemo> {
                 _selectedIndex = index;
               });
             },
-            items: const [
+            items:  [
               BottomNavigationBarItem(
-                icon: Icon(Icons.home),
-                label: 'Home',
+                icon: const Icon(Icons.home),
+                label: home,
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.movie_filter_outlined),
-                label: 'Movie',
+                icon: const Icon(Icons.movie_filter_outlined),
+                label: movie,
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.local_fire_department),
-                label: 'Activity',
+                icon: const Icon(Icons.local_fire_department),
+                label: activity,
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.calendar_today),
-                label: 'Calendar',
+                icon: const Icon(Icons.calendar_today),
+                label: calendar,
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.person),
-                label: 'Profile',
+                icon: const Icon(Icons.person),
+                label: profile,
               ),
             ],
           ),

@@ -1,4 +1,6 @@
 
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -6,6 +8,23 @@ import '../theme/appColor.dart';
 import 'constant.dart';
 Utility utility = Utility();
 class Utility {
+
+  bool isActiveConnection = false;
+  Future<bool> checkInternetConnection() async {
+
+    try {
+      final result = await InternetAddress.lookup('google.com');
+      if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {
+        isActiveConnection = true;
+        return  Future<bool>.value(isActiveConnection);
+      }
+    } on SocketException catch (_) {
+      isActiveConnection = false;
+      return  Future<bool>.value(isActiveConnection);
+    }
+    return  Future<bool>.value(isActiveConnection);
+  }
+
   void showInSnackBar({required String value, context, Duration? duration}) {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
